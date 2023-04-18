@@ -1,0 +1,130 @@
+.section{
+    background-color: #339933;
+}
+
+.section_coupon{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_coupon img {
+    width: 472px;
+    height: 472px;
+    padding: 27px 10px 27px 91px;
+}
+
+.container_form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container_form h2 {
+    margin: 20px 0 0 0;
+    font-weight: 700;
+    font-size: 90px;
+    color: white;
+}
+
+.container_form h3 {
+    font-weight: 700;
+    font-size: 90px;
+    color: white;
+}
+
+.container_form input {
+    outline: none;
+    border: 1px solid transparent;
+    padding: 25px;
+    margin: 0 60px 0 0;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+.container_form button {
+    margin: 0 60px 0 0;
+    padding: 20px;
+    border: 1px solid white;
+    background-color: #339933;
+    color: white;
+    border-radius: 25px;
+
+    font-weight: 700;
+    font-size: 28px;
+    font-family: 'Lora';
+}
+
+.container_form:hover button {
+    opacity: 1;
+}
+
+.container_form button:hover {
+    background-color: white;
+    color: black;
+}
+
+.error_message {
+    font-size: 20px;
+    color: rgb(255, 247, 0);
+    text-align: start;
+    padding: 0 0 20px 0;
+    animation: blink 1s linear infinite;
+}
+
+@media screen  and (max-width: 767px) {
+
+    .section_coupon{
+        display: block;
+        justify-content: space-between;
+    }
+    
+    .section_coupon img {
+        display: none;
+    }
+
+    .container_form {
+        align-items: center;
+    }
+
+    .container_form h2 {
+       text-align: center;
+        font-size: 50px;
+    }
+    
+    .container_form h3 {
+        font-size: 40px;
+    }
+    
+    .container_form input {
+        margin: 0;
+    }
+    
+    .container_form button {
+        margin: 0;
+        padding: 25px 90px;
+        font-size: 20px;
+    }
+}
+
+@media screen  and (max-width: 412px) {
+
+    .container_form h2 {
+        font-size: 25px;
+    }
+     
+    .container_form h3 {
+        font-size: 20px;
+    }
+     
+    .container_form input {
+        padding: 15px;
+    }
+     
+    .container_form button {
+        padding: 20px 90px;
+        font-size: 15px;
+    }
+}

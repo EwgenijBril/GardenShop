@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.header button {
+    border: 2px solid #339933;
+    background-color: #339933;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Lora';
+    color: #FFFFFF;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.header:hover button {
+    opacity: 1;
+}
+
+.header button:hover {
+    background-color: #241C15;
+    color: white;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 57px;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 800; 
+}
+
+.menu_icon {
+    display: none;
+    cursor: pointer;
+}
+
+.nav_menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_menu a:hover {
+    color: #339933;
+}
+
+.cart {
+    font-size: 35px;
+    /* padding: 0 8px 0 0; */
+}
+
+@media screen  and (max-width: 767px) {
+
+    nav {
+        width: 100%;
+        height: 50px;
+    }
+
+    .header img {
+        position: relative;
+        width: 40px;
+        z-index: 2;
+        background-color: white;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .header button {
+       display: none;
+    }
+
+    .menu_icon {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        z-index: 2; 
+        color: black; 
+    }
+
+    .nav_menu a {
+        display: block;
+        padding: 70px 10px 20px 20px ;
+        font-size: 30px;
+        color: white ;
+    }
+
+    .nav_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        background-color: #339933;
+
+        display: block;
+        
+        margin: 0 0 20px 0;
+        
+        transform: translateY(-100%);
+        transition: all 0.2s;
+        z-index: 1;  
+    }
+
+    .active {
+        transform: translateY(0);
+        transition: all 0.5s;
+    }
+}
+
+
+
+

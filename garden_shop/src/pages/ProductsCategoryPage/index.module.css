@@ -1,0 +1,123 @@
+s.common_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sorting {
+    display: flex;
+    flex-direction: row;
+    margin: 70px 0 55px 0;
+}
+
+.sorting span {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 25px;
+}
+
+.search_form input,
+.sort_select {
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 0 20px 0 0;
+    
+    
+}
+
+.search_form {
+    display: inline;
+}
+
+.search_form button {
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search_form button:hover {
+    color: white;
+    background-color: #34495E;
+}
+
+.products_category_page {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr );
+    gap: 50px;
+    row-gap: 30px;
+}
+
+@media screen  and (max-width: 767px) {
+    .sorting {
+        display: block;
+    }
+
+    .block_sorted {
+        margin: 15px 0 0 0;
+    }
+}
+
+@media screen  and (max-width: 412px) {
+    .products_category_page {
+        grid-template-columns: repeat( 2, 1fr );
+    }
+
+    .sorting span {
+        font-size: 15px;
+        padding: 25px 10px 0 0;
+    }
+
+    .search_form input,
+    .sort_select {
+    max-width: 95px;
+    padding: 10px;
+    margin: 0 20px 0 0;
+    
+    
+}
+}
+
+/* @media ( max-width: 820px ) {
+
+    .products_category_page {
+        width: 800px;
+        grid-template-columns: repeat( 2, 1fr );
+        gap: 10px;
+        row-gap: 50px;
+        margin: 0 0 40px 0;
+    }
+}
+
+@media ( max-width: 768px ) {
+
+    .products_category_page {
+        width: 700px;
+        margin: 0 0 40px 0;
+        padding: 0 34px 0 34px;
+    }
+}
+
+@media  (max-width: 412px) {
+
+    .sorting {
+        flex-direction: column;
+        align-items: start;
+        margin: 100px 10px 35px 0px;
+        gap: 15px;
+    }
+
+    .sorting span {
+        margin: 0 10px 0 25px;
+    }
+
+    .products_category_page {
+        width: 300px;
+        gap: 20px;
+        row-gap: 30px;
+        padding: 0 0 0 15px;
+    }
+} */

@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper {
+    max-width: 1430px;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-family: 'Lora';
+}
+
+main {
+    min-height: auto;
+}
+
+@media screen  and (max-width: 762px) {
+    .wrapper {
+        max-width: none;
+    }
+}
+
+
+

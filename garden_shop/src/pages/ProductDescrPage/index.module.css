@@ -1,0 +1,132 @@
+.product_descr_page {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.left_block h2 {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 160px 0 35px 0; 
+}
+
+.left_block img {
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.right_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+   
+}
+
+.price_block {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    gap: 50px;
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.price {
+    color: gray;
+    text-decoration: line-through;
+    font-weight: 500;
+    font-size: 20px;  
+}
+
+.discont {
+    font-weight: 600;
+    font-size: 28px;
+    color: #FF32A1;
+}
+
+.right_block button {
+    background-color: #339933;
+    border: 1px solid #339933;
+    border-radius: 10px;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 28px;
+    color: white;
+}
+
+.right_block:hover button {
+    opacity: 1;
+}
+
+.right_block button:hover {
+    background-color: white;
+    color: black;
+}
+
+.description_block {
+    font-weight: 500;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.description_block h3 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media screen  and (max-width: 767px) {
+    .product_descr_page {
+        display: block;
+    }
+
+    .left_block  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left_block h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .left_block img {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .price_block {
+        justify-content: center;
+    }
+}
+
+@media screen  and (max-width: 412px) {
+
+    .left_block h2 {
+        font-size: 25px;
+        margin: 80px 0 35px 0; 
+    }
+    .price_block {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .right_block button {
+        font-size: 20px;
+        font-family: 'lora'; 
+    }
+
+    .description_block h3 {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .description_block p {
+        text-align: center;
+        font-size: 10px;
+    }
+}

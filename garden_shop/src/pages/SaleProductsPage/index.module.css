@@ -1,0 +1,32 @@
+.products_page h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin: 70px 0 70px 0;
+
+}
+
+.products_cards {
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr );
+    gap: 33px;
+    row-gap: 80px;
+}
+
+@media screen  and (max-width: 767px) {
+    .products_cards {
+        grid-template-columns: repeat( 3, 1fr );
+    }
+}
+
+@media screen  and (max-width: 412px) {
+
+    .products_page h1 {
+        font-size: 20px;
+        margin: 35px 0 35px 0;
+    
+    }
+    .products_cards {
+        grid-template-columns: repeat( 2, 1fr );
+        gap: 0;
+    }
+}
