@@ -25,9 +25,18 @@
     justify-content: flex-start;
     gap: 68px;
     font-size: 50px;
-    color: green;
     padding: 20px 0;
     cursor: pointer;
+    
+   
+}
+
+.icons_container a {
+    color: green;
+}
+
+.icons_container a:hover {
+    transform: scale(1.2);
 }
 
 .address_block {

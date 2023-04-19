@@ -1,5 +1,4 @@
 import React from "react";
-import s from "./index.module.css";
 import { RxCross2 } from "react-icons/rx";
 import { useDispatch } from "react-redux";
 import {
@@ -7,6 +6,7 @@ import {
   decrementCount,
   deleteCard,
 } from "../../store/reducers/cart";
+import s from "./index.module.css";
 
 export default function CartCard({
   id,
@@ -26,8 +26,8 @@ export default function CartCard({
     <div className={s.cart_card}>
       <div className={s.left_block}>
         <img
-          // src={`https://project-backend1-jw2u.onrender.com${image}`}
-          src={`http://localhost:3333${image}`}
+          src={`https://project-backend1-jw2u.onrender.com${image}`}
+          // src={`http://localhost:3333${image}`}
           alt={title}
         />
         <div className={s.info_block}>

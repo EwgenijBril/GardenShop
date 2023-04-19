@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-import logo from "./media/image 1.png";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { ShoppingCartOutlined } from "@ant-design/icons";
 import { MenuOutlined } from "@ant-design/icons";
+import logo from "./media/image 1.png";
 import s from "./index.module.css";
 
 export default function Nav() {
+  const cart = useSelector((state) => state.cart);
+
   const [menuActive, setMenuActive] = useState(false);
 
   const toggleMenu = () => {
@@ -16,6 +19,8 @@ export default function Nav() {
   const closeMenu = () => {
     setMenuActive(false);
   };
+
+  const totalSum = cart.reduce((total, amount) => total + amount.count, 0);
 
   return (
     <section className={s.section}>
@@ -43,7 +48,12 @@ export default function Nav() {
             Contacts
           </HashLink>
           <Link to="cart" onClick={closeMenu}>
-            <ShoppingCartOutlined className={s.cart} />
+            <div className={s.cart_block}>
+              <p className={s.totalSum}>
+                {totalSum > 0 && <span>{totalSum}</span>}
+              </p>
+              <ShoppingCartOutlined className={s.cart} />
+            </div>
           </Link>
         </div>
       </nav>

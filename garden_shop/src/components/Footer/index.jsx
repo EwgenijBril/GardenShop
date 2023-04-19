@@ -10,8 +10,12 @@ export default function Footer() {
           <h2>Contact</h2>
           <p>+49 176 99988999</p>
           <div className={s.icons_container}>
-            <InstagramOutlined />
-            <WhatsAppOutlined />
+            <a href="https://www.instagram.com/" target="_blank">
+              <InstagramOutlined />
+            </a>
+            <a href="https://web.whatsapp.com/" target="_blank">
+              <WhatsAppOutlined />
+            </a>
           </div>
         </div>
         <div className={s.address_block}>
