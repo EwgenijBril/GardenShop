@@ -77,6 +77,10 @@
 }
 
 @media screen  and (max-width: 412px) {
+
+    .product_card_block  img {
+        max-width: 130px;
+    }
     .discont_price {
         font-size: 15px;   
     }

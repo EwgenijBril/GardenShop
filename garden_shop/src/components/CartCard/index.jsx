@@ -27,7 +27,7 @@ export default function CartCard({
       <div className={s.left_block}>
         <img
           src={`https://project-backend1-jw2u.onrender.com${image}`}
-          // src={`http://localhost:3333${image}`}
+          //src={`http://localhost:3333${image}`}
           alt={title}
         />
         <div className={s.info_block}>

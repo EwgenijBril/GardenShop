@@ -8,7 +8,7 @@ export default function CategoryCard({ id, title, image }) {
       <div className={s.card}>
         <img
           src={`https://project-backend1-jw2u.onrender.com${image}`}
-          // src={`http://localhost:3333${image}`}
+          //src={`http://localhost:3333${image}`}
           alt={title}
         />
         <p>{title}</p>

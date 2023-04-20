@@ -25,7 +25,7 @@ export default function SaleProductCard({
         <Link to={`/products/${id}`}>
           <img
             src={`https://project-backend1-jw2u.onrender.com${image}`}
-            // src={`http://localhost:3333${image}`}
+            //src={`http://localhost:3333${image}`}
             alt={title}
           />
         </Link>

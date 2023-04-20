@@ -30,7 +30,7 @@ export default function ProductDescrPage() {
           <h2>{title}</h2>
           <img
             src={`https://project-backend1-jw2u.onrender.com${image}`}
-            // src={`http://localhost:3333${image}`}
+            //src={`http://localhost:3333${image}`}
             alt={title}
           />
         </div>
