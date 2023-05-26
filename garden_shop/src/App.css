@@ -12,6 +12,10 @@
     font-family: 'Lora';
 }
 
+body {
+    padding: 0 4px 4px 4px;
+}
+
 main {
     min-height: auto;
 }

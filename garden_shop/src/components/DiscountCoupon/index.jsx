@@ -21,7 +21,7 @@ export default function DiscountCoupon() {
   const phoneRegister = register("phone", {
     required: "* Mandatory field",
     pattern: {
-      value: /^\+49\d{11}$/,
+      value: /^[\d\+][\d\(\)\ -]{4,14}\d$/,
       message: "* Not valid phone-forman",
     },
   });
